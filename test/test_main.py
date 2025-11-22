@@ -13,7 +13,7 @@ def test_home_route(client):
     html = response.data.decode()
 
     assert "Maheswari" in html
-    assert "Addition: 25" in html
-    assert "Subtraction: 15" in html
-    assert "Multiplication: 100" in html
-    assert "Division: 4.0" in html
+    assert "<p><b>Addition:</b> 25</p>" in html
+    assert "<p><b>Subtraction:</b> 15</p>" in html
+    assert "<p><b>Multiplication:</b> 100</p>" in html
+    assert "<p><b>Division:</b> 4.0</p>" in html
