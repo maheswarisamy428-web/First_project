@@ -31,7 +31,7 @@ jobs:
 
       - name: Run pytest
         run: |
-          pytest
+          PYTHONPATH=.:$PYTHONPATH pytest
 
 
   deploy:
